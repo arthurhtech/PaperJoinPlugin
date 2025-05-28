@@ -1,0 +1,4 @@
+name: PaperJoinPlugin
+version: '1.0-SNAPSHOT'
+main: org.arthurhtech.paperJoinPlugin.PaperJoinPlugin
+api-version: '1.20'

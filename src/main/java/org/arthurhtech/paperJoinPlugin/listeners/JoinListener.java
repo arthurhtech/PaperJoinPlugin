@@ -12,9 +12,13 @@ public class JoinListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
+
         player.sendMessage("Bem vindo ao servidor! " + player.getName());
-        player.sendMessage("Aqui, pegue algo para começar.");
-        player.getInventory().addItem(new ItemStack(Material.BREAD, 10));
-        player.getInventory().addItem(new ItemStack(Material.WOODEN_SWORD));
+
+        if (!player.hasPlayedBefore()) {
+            player.sendMessage("Aqui, pegue algo para começar.");
+            player.getInventory().addItem(new ItemStack(Material.BREAD, 10));
+            player.getInventory().addItem(new ItemStack(Material.WOODEN_SWORD));
+        }
     }
 }

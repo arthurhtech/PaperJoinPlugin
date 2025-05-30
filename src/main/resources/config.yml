@@ -1,0 +1,6 @@
+join:
+  greeting-message: "Bem vindo ao servidor {player}!"
+  first-time-message: "Aqui, pegue isso para te ajudar."
+  rewards:
+    - BREAD:12
+    - WOODEN_SWORD:1
